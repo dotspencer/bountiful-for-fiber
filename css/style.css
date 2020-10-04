@@ -1,8 +1,8 @@
 * { box-sizing: border-box; }
 body {
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP',sans-serif;
   background-color: whitesmoke;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 nav {
   display: flex;
@@ -20,6 +20,10 @@ nav a {
   padding: 8px 10px;
   border-radius: 5px;
   color: inherit;
+  transition: all 0.15s;
+}
+nav a:hover {
+  background-color: #00000024;
 }
 nav a + a {
   margin-left: 10px;
@@ -33,4 +37,17 @@ nav a img {
 nav a.title {
   background-color: transparent;
   font-weight: bold;
+}
+.hero {
+  max-width: 800px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+.hero img {
+  max-height: 250px;
+}
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0;
 }
