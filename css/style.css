@@ -37,17 +37,55 @@ nav a img {
 nav a.title {
   background-color: transparent;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 .hero {
   max-width: 800px;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.hero img {
-  max-height: 250px;
+.hero img.logo {
+  max-height: 260px;
+  margin-top: 20px;
 }
 .hero h1 {
   font-size: 2.3rem;
   margin-bottom: 0;
+}
+div.link-wrap {
+  display: flex;
+  margin: 30px auto 0;
+  justify-content: flex-start;
+}
+a.big-link {
+  display: flex;
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+  align-items: center;
+  /* box-shadow: rgba(0,0,0,0.16) 0px 1px 4px; */
+}
+a.big-link + a.big-link {
+  margin-left: 15px;
+}
+a.big-link:hover {
+  background-color: #d4d4d4;
+}
+a.big-link .img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+a.big-link img {
+  height: 20px;
+}
+a.big-link span {
+  margin-left: 5px;
 }
