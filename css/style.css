@@ -14,7 +14,7 @@ nav {
   border-radius: 5px;
   justify-content: space-between;
 }
-nav .right {
+nav .right, .left {
   display: flex;
 }
 nav a {
@@ -131,6 +131,7 @@ section {
   justify-content: center;
   height: 70px;
   align-items: center;
+  background-color: #eaeaea;
 }
 .join-link img {
   height: 52px;
@@ -144,6 +145,11 @@ section {
 .join-link .img-wrap.nextdoor img {
   height: 20px;
   margin-left: 3px;
+}
+.join-link .img-wrap.google-form img {
+  height: 30px;
+  margin-left: 3px;
+  opacity: 0.8;
 }
 .join-link span {
   margin-top: 10px;
