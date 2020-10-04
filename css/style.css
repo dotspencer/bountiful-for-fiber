@@ -14,7 +14,12 @@ nav {
   border-radius: 5px;
   justify-content: space-between;
 }
+nav .right {
+  display: flex;
+}
 nav a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   background-color: #00000014;
   padding: 8px 10px;
@@ -54,12 +59,12 @@ nav a.title {
   font-size: 2.3rem;
   margin-bottom: 0;
 }
-div.link-wrap {
+div.info-link-wrap {
   display: flex;
   margin: 30px auto 0;
   justify-content: flex-start;
 }
-a.big-link {
+a.info-link {
   display: flex;
   background-color: #eaeaea;
   padding: 10px;
@@ -70,22 +75,79 @@ a.big-link {
   align-items: center;
   /* box-shadow: rgba(0,0,0,0.16) 0px 1px 4px; */
 }
-a.big-link + a.big-link {
+a.info-link + a.info-link {
   margin-left: 15px;
 }
-a.big-link:hover {
+a.info-link:hover {
   background-color: #d4d4d4;
 }
-a.big-link .img-wrap {
+a.info-link .img-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
   border-radius: 5px;
 }
-a.big-link img {
+a.info-link img {
   height: 20px;
 }
-a.big-link span {
+a.info-link span {
   margin-left: 5px;
+}
+
+section {
+  max-width: 780px;
+  margin: 20px auto 0;
+}
+
+.join-link-wrap {
+  display: flex;
+  margin: 20px auto;
+}
+.join-link {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+  align-items: center;
+  box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+  width: 100%;
+  max-width: 160px;
+  transition: all 0.2s;
+}
+.join-link:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+}
+.join-link .img-wrap {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+}
+.join-link img {
+  height: 52px;
+}
+.join-link .img-wrap.facebook {
+  background-color: #4267B2;
+}
+.join-link .img-wrap.nextdoor {
+  background-color: #93D500;
+}
+.join-link .img-wrap.nextdoor img {
+  height: 20px;
+  margin-left: 3px;
+}
+.join-link span {
+  margin-top: 10px;
+}
+.join-link + .join-link {
+  margin-left: 20px;
 }
