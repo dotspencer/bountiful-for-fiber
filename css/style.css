@@ -241,6 +241,10 @@ footer {
   .hero h1 {
     font-size: 1.7rem;
   }
+  .hero img.logo {
+    height: 200px;
+    margin-top: 30px;
+  }
   a.info-link {
     flex-direction: column;
     padding: 10px 5px;
