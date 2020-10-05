@@ -3,7 +3,7 @@ body {
   font-family: 'Noto Sans JP',sans-serif;
   background-color: whitesmoke;
   font-size: 1.05rem;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 nav {
   display: flex;
@@ -163,10 +163,52 @@ section + section {
 }
 
 .question {
-  margin-top: 20px;
+  margin-top: 30px;
   font-weight: 600;
 }
 .answer {
   margin-top: 10px;
   line-height: 2rem;
+}
+
+.cta {
+  display: flex;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background-color: #ffd589;
+  padding: 20px 30px 25px 0;
+  border-radius: 5px;
+  align-items: center;
+}
+.cta h2 {
+  margin: 0;
+}
+.cta .desc {
+  margin-top: 5px;
+}
+.cta img {
+  height: 60px;
+  margin-left: 20px;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+.cta .right {
+  margin-left: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.4;
+  font-size: 1rem;
+}
+
+@media (max-width: 750px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .hero h1 {
+    text-align: center;
+  }
 }
